@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = 8000;
 const path = require("node:path");
 const assetsPath = path.join(__dirname, "public");
 const { messageRouter } = require("./routes/messageRouter");
