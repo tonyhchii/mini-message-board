@@ -1,0 +1,7 @@
+<html>
+  <head></head>
+  <body>
+    <% locals.messages.forEach(message => { %> <%- include('message', {text:
+    message.text, user: message.user, added: message.added}) %> <% }); %>
+  </body>
+</html>
