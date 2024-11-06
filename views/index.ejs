@@ -6,8 +6,8 @@
     <%- include('header')  %>
     <div class="message-board">
       <h2>Messages</h2>
-      <% locals.messages.forEach(message => { %> <%- include('message', {id: message.id, text:
-      message.text, user: message.user, added: message.added}) %> <% }); %>
+      <% locals.messages.forEach((message) => { %> <%- include('message', {id: message.id, text:
+      message.message, user: message.username, added: message.added}) %> <% }); %>
     </div>
   </body>
 </html>
